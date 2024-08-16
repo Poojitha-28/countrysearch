@@ -1,0 +1,13 @@
+/* styles.css */
+.countryCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 5px;
+}
