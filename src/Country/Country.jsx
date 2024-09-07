@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "./Country.module.css"
+import './Country.css';
 
 function Country()
 {
@@ -48,10 +48,9 @@ function Country()
             gap:"30px",
         }}>
           {filterData.map((ele,idx) => ( 
-            <div key={idx} className={styles.countryCard}>   <div style={{width:"100px",height:"100px"}}> 
-                <img src={ele.flags.svg} alt="Text" style={{maxWidth:"100%",maxHeight:"100%",objectFit:"fill"}} />
-                </div>
-                <h6 style={{padding:"3px"}}>{ele.name.common}</h6>
+            <div key={idx} className="countryCard">   
+                <img src={ele.flags.svg} alt="Text" style={{maxWidth:"70%",maxHeight:"70%",objectFit:"fill"}} />
+                <h2 style={{padding:"3px"}}>{ele.name.common}</h2>
             </div>
           ))}
         </div>
